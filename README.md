@@ -37,7 +37,7 @@ Versions
 --------
 
 1.2, March 5, 2018
-- Update for Bludit v2.
+- Update to Bludit 2.
 - German language files.
 
 1.1, August 17, 2017
