@@ -36,6 +36,10 @@ The plugin automatically formats the content.
 Versions
 --------
 
+1.2, March 5, 2018
+- Update for Bludit v2.
+- German language files.
+
 1.1, August 17, 2017
 - Add README.md
 - Add several themes
