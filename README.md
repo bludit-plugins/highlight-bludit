@@ -36,6 +36,10 @@ The plugin automatically formats the content.
 Versions
 --------
 
+1.3, March 6, 2018
+- Minor changes.
+- Spanish language files.
+
 1.2, March 5, 2018
 - Update to Bludit 2.
 - German language files.

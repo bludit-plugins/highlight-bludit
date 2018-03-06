@@ -91,10 +91,10 @@ class pluginHighlight extends Plugin {
     $this->dbFields = array(
       'styles' => 'agate'
     );
-  } 
+  }
   //
   public function siteHead() {
-    echo '<link rel="stylesheet" href="'.$this->getDbField('styles').'">';
+    echo '<link rel="stylesheet" href="'.$this->getValue('styles').'">';
   }
   public function siteBodyEnd() {
     echo '<script src="'.$this->highlightjs.'"></script>';
@@ -107,13 +107,13 @@ class pluginHighlight extends Plugin {
     $html .= '<select name="styles" onchange="document.getElementById(\'highlight-theme-link\').setAttribute(\'href\', this.options[this.selectedIndex].value)">';
 
     foreach($this->themes as $text=>$value) {
-      $html .= '<option value="'.$value.'" '.( ($this->getDbField('styles')===$value)?' selected="selected"':'').'>'.$text.'</option>';
+      $html .= '<option value="'.$value.'" '.( ($this->getValue('styles')===$value)?' selected="selected"':'').'>'.$text.'</option>';
     }
 
     $html .= '</select>';
 
     /* test highlight theme */
-    $html .= '<link id="highlight-theme-link" type="text/css" rel="stylesheet" href="'.$this->getDbField('styles').'">';
+    $html .= '<link id="highlight-theme-link" type="text/css" rel="stylesheet" href="'.$this->getValue('styles').'">';
     $html .= '<script src="'.$this->highlightjs.'"></script>';
     $html .= '<script>hljs.initHighlightingOnLoad();</script>';
 
