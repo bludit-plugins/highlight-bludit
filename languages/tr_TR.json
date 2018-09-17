@@ -1,0 +1,9 @@
+{
+	"plugin-data":
+	{
+		"name": "Vurgula",
+		"description": "Kodunuzu vurgulayın."
+	},
+  "choose-theme": "Bir tema seçin",
+  "highlight-example": "Örnek"
+}
